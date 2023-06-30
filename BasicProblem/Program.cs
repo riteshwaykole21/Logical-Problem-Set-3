@@ -10,13 +10,22 @@ namespace BasicProblem
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("1 : Return True");
+            Console.WriteLine("2 : To Convert Sentences Into Lower Case");
             Console.WriteLine("Enter A Option Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
                 case 1:
+                    ReturnTrue returnTrue = new ReturnTrue();
+                    returnTrue.Numbers();
+                    break;
+                case 2:
+                    LowerCase low = new LowerCase();
+                    low.Result();
                     break;
             }
+            Console.ReadLine();
         }
     }
 }
