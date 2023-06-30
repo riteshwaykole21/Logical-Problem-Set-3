@@ -12,6 +12,7 @@ namespace BasicProblem
         {
             Console.WriteLine("1 : Return True");
             Console.WriteLine("2 : To Convert Sentences Into Lower Case");
+            Console.WriteLine("3 : Longest Word In The Sentences");
             Console.WriteLine("Enter A Option Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -23,6 +24,10 @@ namespace BasicProblem
                 case 2:
                     LowerCase low = new LowerCase();
                     low.Result();
+                    break;
+                case 3:
+                    LogestWord word = new LogestWord();
+                    word.Word();
                     break;
             }
             Console.ReadLine();
