@@ -13,9 +13,10 @@ namespace BasicProblem
             Console.WriteLine("1 : Return True");
             Console.WriteLine("2 : To Convert Sentences Into Lower Case");
             Console.WriteLine("3 : Longest Word In The Sentences");
+            Console.WriteLine("4 : The Sum Last Two Lowest Positive Number");
             Console.WriteLine("Enter A Option Number");
             int Option = Convert.ToInt32(Console.ReadLine());
-            switch(Option)
+            switch (Option)
             {
                 case 1:
                     ReturnTrue returnTrue = new ReturnTrue();
@@ -28,6 +29,15 @@ namespace BasicProblem
                 case 3:
                     LogestWord word = new LogestWord();
                     word.Word();
+                    break;
+                case 4:
+                    SumOfLowestNo sum = new SumOfLowestNo();
+                    int[] Arr = { 19, 5, 42, 2, 77 };
+                    int[] Arr1 = { 10, 343445353, 3453445, 34535453 };
+                    int[] Arr2 = {2, 9, 6, -1 };
+                    sum.Number(Arr);
+                    sum.Number(Arr1);
+                    sum.Number(Arr2);
                     break;
             }
             Console.ReadLine();
