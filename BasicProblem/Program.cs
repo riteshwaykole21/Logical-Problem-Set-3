@@ -14,6 +14,7 @@ namespace BasicProblem
             Console.WriteLine("2 : To Convert Sentences Into Lower Case");
             Console.WriteLine("3 : Longest Word In The Sentences");
             Console.WriteLine("4 : The Sum Last Two Lowest Positive Number");
+            Console.WriteLine("5 : Odd Number From 1 To 99");
             Console.WriteLine("Enter A Option Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
@@ -38,6 +39,10 @@ namespace BasicProblem
                     sum.Number(Arr);
                     sum.Number(Arr1);
                     sum.Number(Arr2);
+                    break;
+                case 5:
+                    OddNumber odd = new OddNumber();
+                    odd.Numbers();
                     break;
             }
             Console.ReadLine();
