@@ -15,6 +15,9 @@ namespace BasicProblem
             Console.WriteLine("3 : Longest Word In The Sentences");
             Console.WriteLine("4 : The Sum Last Two Lowest Positive Number");
             Console.WriteLine("5 : Odd Number From 1 To 99");
+            Console.WriteLine("6 : Prime Number Program");
+            Console.WriteLine("7 : Sum Of Digit Number");
+            Console.WriteLine("8 : Class Demo Problem");
             Console.WriteLine("Enter A Option Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
@@ -43,6 +46,18 @@ namespace BasicProblem
                 case 5:
                     OddNumber odd = new OddNumber();
                     odd.Numbers();
+                    break;
+                case 6:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Numbers();
+                    break;
+                case 7:
+                    SumOfDigit sumOfDigit = new SumOfDigit();
+                    sumOfDigit.Numbers();
+                    break;
+                case 8:
+                    ClassDemo demo = new ClassDemo(12, "Ritesh", ".Net", 2000,1000);
+                    demo.Display();
                     break;
             }
             Console.ReadLine();
